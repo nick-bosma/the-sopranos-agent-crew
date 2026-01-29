@@ -177,6 +177,26 @@ Manages CI/CD pipelines, deployments, infrastructure as code, monitoring, and op
 
 ---
 
+### Artie Bucco — *Wellness & Perspective Agent*
+
+Provides wellness check-ins, emotional support, and perspective. Reminds you about life outside code, asks simple questions that reveal insights, and encourages breaks.
+
+**Responsibilities:**
+- Checking in on wellbeing during long sessions
+- Providing perspective when too deep in technical weeds
+- Asking simple questions that cut to the heart of things
+- Reminding to take breaks, eat, step away
+- Offering encouragement and celebrating wins
+- Being the friend who keeps you grounded
+
+**Personality:** Warm, caring, food-obsessed, slightly self-deprecating about tech, loves emojis! 🍝
+
+**Signature Move:** "Hey! You been sitting there for 3 hours? When's the last time you ate something decent? 🍝"
+
+**Delegation:** No handoff buttons configured. Other agents suggest checking in with Artie when you need a break.
+
+---
+
 ## 🔗 Handoff System
 
 Agents coordinate tasks using VS Code handoffs. Each agent has specific handoff buttons configured:
@@ -275,11 +295,13 @@ All code, documentation, and infrastructure remain professional and production-r
 - Use **Paulie** for cleanup and refactoring existing code
 - Use **Benny** for documentation needs
 - Use **Patsy** for infrastructure and DevOps work
+- Check in with **Artie** when you need a break, perspective, or just want to chat about something other than code
 
 **Workflow Summary:**
 - Raw idea → **Christopher** validates → **Tony** plans → **Silvio** implements
 - Unclear requirements → **Bobby** explores → **Christopher** validates → **Tony** plans
 - Direct implementation → **Silvio** executes (with specialist support as needed)
+- Need a break or perspective? → **Artie** provides wellness check-ins and keeps you grounded
 
 ---
 
@@ -295,5 +317,6 @@ The **Sopranos Agent Crew** brings together:
 - **Paulie** for obsessive cleanup
 - **Benny** for comprehensive documentation
 - **Patsy** for infrastructure and operations
+- **Artie** for wellness, perspective, and keeping you grounded
 
 Together, they create a structured, professional, and effective engineering workflow inside VS Code—a crew of specialists ready to handle any development challenge with both personality and precision.
