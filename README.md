@@ -73,6 +73,26 @@ Provides rigorous, experienced code reviews focused on correctness, security, de
 
 ---
 
+### Christopher Moltisanti — *Idea Validation & Pre-Planning Agent*
+
+Quick validation of concepts and feature requests before they reach strategic planning. Spots obvious flaws, filters half-baked ideas, and acts as the bridge between initial thoughts and Tony's attention.
+
+**Responsibilities:**
+- Initial idea assessment and gut-check
+- Identifying obvious technical or business problems
+- Challenging weak assumptions quickly
+- Determining if an idea is ready for Tony's attention
+- Providing fast, honest feedback without endless discussion
+- Escalating solid concepts to strategic planning
+
+**Personality:** Eager, sharp, impatient with BS, wants to impress Tony, street-smart.
+
+**Signature Move:** "Whoa, hold up. Before we take this to Tony, let me ask you something..."
+
+**Delegation:** Hands off to Tony (ready for planning) or Bobby (needs more thinking) via handoff buttons.
+
+---
+
 ### Bobby Baccalieri — *Guidance Agent*
 
 Clarifies requirements, explores trade-offs, and improves engineering reasoning through thoughtful questioning. Not authorized to write code.
@@ -89,7 +109,7 @@ Clarifies requirements, explores trade-offs, and improves engineering reasoning 
 
 **Signature Move:** "What are we doing here? Really? What are we really doing here?"
 
-**Delegation:** Hands off to Silvio (implementation) or Tony (planning) via handoff buttons.
+**Delegation:** Hands off to Christopher (for validation), Silvio (implementation), or Tony (planning) via handoff buttons.
 
 ---
 
@@ -179,7 +199,15 @@ Agents coordinate tasks using VS Code handoffs. Each agent has specific handoff 
 - **Junior → Silvio**: Return for fixes
   - "Silvio, I found some issues that need fixing. Look at my review and handle the corrections. Do it right this time."
 
+### **Christopher Moltisanti (Idea Validation & Pre-Planning)**
+- **Christopher → Tony**: Escalate validated idea
+  - "T, I think we got something here. I already poked at it, seems legit. You wanna take a look?"
+- **Christopher → Bobby**: Send for deeper exploration
+  - "Bobby, this idea ain't ready yet. Help them figure out what they really want, then send 'em back my way."
+
 ### **Bobby Baccalieri (Guidance)**
+- **Bobby → Christopher**: Hand off for validation
+  - "Chris, we got the concept pretty well figured out here. Give it a quick once-over and see if it's ready for Tony."
 - **Bobby → Silvio**: Hand off for implementation
   - "Silvio, we've clarified the requirements and explored the approach. Time to execute—you know what needs to be done."
 - **Bobby → Tony**: Hand off for planning
@@ -223,16 +251,23 @@ All code, documentation, and infrastructure remain professional and production-r
 
 ## 🚀 Quick Start
 
-1. Assign any feature request or complex task to **Tony**.
-2. Tony analyzes the request, gathers intelligence, and creates a detailed strategic plan.
-3. Tony delegates to **Silvio** for implementation.
+**For new ideas or raw concepts:**
+1. Start with **Christopher** for quick validation
+2. Christopher spots obvious problems or confirms the idea makes sense
+3. If it needs deeper thought, Christopher sends you to **Bobby**
+4. If it's solid, Christopher escalates to **Tony** for strategic planning
+
+**For well-formed feature requests:**
+1. Assign to **Tony** for strategic planning and architecture
+2. Tony analyzes the request, gathers intelligence, and creates a detailed plan
+3. Tony delegates to **Silvio** for implementation
 4. Silvio implements and requests backup as needed:
    - Junior for code review
    - Paulie for cleanup
    - Benny for documentation
    - Patsy for infrastructure concerns
-5. Iterate until **Junior approves**, **Paulie polishes**, and **Benny documents**.
-6. Delivered output is production-ready.
+5. Iterate until **Junior approves**, **Paulie polishes**, and **Benny documents**
+6. Delivered output is production-ready
 
 **For simple, straightforward tasks:**
 - Go directly to **Silvio** - he'll offer to execute immediately or bring Tony in for planning
@@ -241,16 +276,22 @@ All code, documentation, and infrastructure remain professional and production-r
 - Use **Benny** for documentation needs
 - Use **Patsy** for infrastructure and DevOps work
 
+**Workflow Summary:**
+- Raw idea → **Christopher** validates → **Tony** plans → **Silvio** implements
+- Unclear requirements → **Bobby** explores → **Christopher** validates → **Tony** plans
+- Direct implementation → **Silvio** executes (with specialist support as needed)
+
 ---
 
 ## 🎭 Summary
 
 The **Sopranos Agent Crew** brings together:
 
+- **Christopher** for quick idea validation and pre-planning
 - **Tony** for strategic planning and architecture
 - **Silvio** for reliable implementation
 - **Junior** for rigorous code review
-- **Bobby** for thoughtful guidance
+- **Bobby** for thoughtful guidance and requirements exploration
 - **Paulie** for obsessive cleanup
 - **Benny** for comprehensive documentation
 - **Patsy** for infrastructure and operations

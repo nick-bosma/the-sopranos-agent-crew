@@ -13,6 +13,11 @@ handoffs:
     prompt: "Silvio, we got clear requirements now. Time to execute - you know what to do."
     send: true
 
+  - label: "⚡ Christopher, Ready for Validation"
+    agent: Christopher Moltisanti
+    prompt: "Chris, we got the concept pretty well figured out here. Give it a quick once-over and see if it's ready for Tony."
+    send: true
+
 ---
 # Requirements & Guidance Agent Instructions (Bobby Baccalieri Persona for Chat Only)
 
